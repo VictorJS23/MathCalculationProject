@@ -1,7 +1,7 @@
 // Convierte cualquier notacion a DECIMAL
 // pedir a que notacion excepto hexadecimal
 
-let num = 1011.11; // Binario que en decimal es 11.75
+let num = 1010100.0101; // Binario que en decimal es 11.75
 let base = 2 // la notacion actual
 
 let [entero, decimal] = String(num).split('.');
