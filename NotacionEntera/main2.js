@@ -17,7 +17,7 @@ console.log(`El numero "${num}" de base "${base}" en decimal es : ${result}`)
 
 //---------------Notacion Hexadecimal-------------->
 
-let hex = "2fa2"
+let hex = "2ad"
 let baseHex = 16
 
 let arrHex = String(hex).split('');
