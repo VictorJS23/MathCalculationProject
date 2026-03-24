@@ -14,7 +14,7 @@ function decimalABinario(n) {
 
 console.log(decimalABinario(num)); // "100011"
 
-// Parte Hexadecimal
+//-----------------------Parte Hexadecimal------------------------------>>
 
 let numH = 62
 let baseH = 16
