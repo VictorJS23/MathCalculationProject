@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+}
+
+h1 {
+  color: #f57c00;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: #333;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.converter {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-number {
+  padding: 8px;
+  width: 80px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

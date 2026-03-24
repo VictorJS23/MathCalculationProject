@@ -1,14 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MathCalculationProject</title>
+    <title>Sistemas de numeración</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>MathCalculationProject</h1>
+    <div class="container">
+        <h1>Sistemas de numeración</h1>
+        <p class="desc">
+            Un sistema de numeración es un conjunto de símbolos y reglas de generación que permiten construir todos los
+            números válidos en el sistema.
+        </p>
+        <p class="desc">
+            Introduzca el número de <strong>Sistema decimal</strong> que desea convertir en el cuadro de texto, para ver
+            los resultados en la tabla.
+        </p>
+
+        <div class="converter">
+            <input type="text" value="100" class="input-number">
+
+            <select class="select">
+                <option>Sistema decimal</option>
+                <option>Sistema binario</option>
+                <option>Sistema octal</option>
+                <option>Sistema hexadecimal</option>
+            </select>
+
+            <span class="swap">↔</span>
+
+            <select class="select">
+                <option>Sistema hexadecimal</option>
+                <option>Sistema decimal</option>
+                <option>Sistema binario</option>
+                <option>Sistema octal</option>
+            </select>
+
+            <button class="btn" id="convert">➜</button>
+        </div>
+
+        <div class="table">
+            <div class="row header">
+                <div class="col from">From</div>
+                <div class="col equal">es igual a</div>
+                <div class="col to">To</div>
+            </div>
+            <div class="row">
+                <div class="col">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="validation.js"></script>
 </body>
 
 </html>
