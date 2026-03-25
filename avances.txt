@@ -1,0 +1,3 @@
+- Conversion de notaciones a decimal para numeros sin punto decimal realizado, no tocar.
+main2.js terminado
+

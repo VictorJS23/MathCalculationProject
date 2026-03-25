@@ -21,42 +21,37 @@
         </p>
 
         <div class="converter">
-            <input type="text" value="100" class="input-number">
+            <input type="text" class="input-number" id="input">
 
-            <select class="select">
-                <option>Sistema decimal</option>
-                <option>Sistema binario</option>
-                <option>Sistema octal</option>
-                <option>Sistema hexadecimal</option>
+            <select id="from" class="select">
+                <option value="decimal">Sistema Decimal</option>
+                <option value="binario">Sistema Binario</option>
+                <option value="octal">Sistema Octal</option>
+                <option value="hexadecimal">Sistema Hexadecimal</option>
             </select>
 
             <span class="swap">↔</span>
 
-            <select class="select">
-                <option>Sistema hexadecimal</option>
-                <option>Sistema decimal</option>
-                <option>Sistema binario</option>
-                <option>Sistema octal</option>
+            <select id="to" class="select">
+                <option value="hexadecimal">Sistema Hexadecimal</option>
+                <option value="decimal">Sistema Decimal</option>
+                <option value="binario">Sistema Binario</option>
+                <option value="octal">Sistema Octal</option>
             </select>
 
             <button class="btn" id="convert">➜</button>
         </div>
-
-        <div class="table">
-            <div class="row header">
-                <div class="col from">From</div>
-                <div class="col equal">es igual a</div>
-                <div class="col to">To</div>
-            </div>
-            <div class="row">
-                <div class="col">&nbsp;</div>
-                <div class="col">&nbsp;</div>
-                <div class="col">&nbsp;</div>
-            </div>
-        </div>
     </div>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script src="validation.js"></script>
+    <script src="NotacionDecimal/main.js"></script>
+    <script src="NotacionDecimal/main1.js"></script>
+    <script src="NotacionEntera/main2.js"></script>
+    <script src="Notacion/main3.js"></script>
+    <script src="NotacionDiv/main4.js"></script>
+
 </body>
 
 </html>
