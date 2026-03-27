@@ -1,43 +1,122 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f4f4f4;
-  margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* CONTENEDOR */
 .container {
-  width: 80%;
-  margin: 30px auto;
-  background: #fff;
-  padding: 25px;
+    background: rgba(47, 47, 71, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    border-radius: 18px;
+    width: 650px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 
+/* TITULO */
 h1 {
-  color: #f57b00f1;
-  margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ff7a00;
+    font-size: 28px;
 }
 
+/* DESCRIPCION */
 .desc {
-  color: #333;
-  font-size: 14px;
-  margin: 5px 0;
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 0.85;
+    line-height: 1.5;
 }
 
+/* CONTENEDOR DEL CONVERTIDOR */
 .converter {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+    align-items: center;
 }
 
+/* INPUT */
 .input-number {
-  padding: 8px;
-  width: 80px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #1e1e2f;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
+.input-number:focus {
+    box-shadow: 0 0 5px rgba(255, 122, 0, 0.6);
+}
+
+/* SELECT */
 .select {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #1e1e2f;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* FLECHA */
+.swap {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* BOTON */
+#convert {
+    background: linear-gradient(135deg, #ff7a00, #ff9500);
+    border: none;
+    padding: 12px 16px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HOVER BOTON */
+#convert:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 122, 0, 0.6);
+}
+
+/* RESPONSIVE (opcional pero pro 🔥) */
+@media (max-width: 700px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .converter {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #convert {
+        width: 100%;
+    }
 }
