@@ -28,8 +28,9 @@ export const anyDoubleDecimalToAnyNotation = (num, base) => {
     //-------Parte negativa------->>
 
     let suma = 0
+    let precision = 15 // 🔥 LIMITE PARA EVITAR LOOP INFINITO
 
-    while (suma < decimal) {
+    while (suma < decimal && precision > 0) {
         let valor = Math.pow(base, countDecimal)
 
         if (suma + valor <= decimal) {
@@ -37,6 +38,7 @@ export const anyDoubleDecimalToAnyNotation = (num, base) => {
             suma += valor
         }
         countDecimal--
+        precision-- // 🔥 IMPORTANTE
     }
 
     console.log(negativePowers)
