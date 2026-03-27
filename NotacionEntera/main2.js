@@ -17,7 +17,7 @@ export const anyIntNotationToDecimal = (num, base) => {
         }
         console.log(result);
 
-        return String(result) // 🔥 retorno como string
+        return String(result) //  retorno como string
 
     } else {
         let arrHex = String(num).split('');
@@ -60,7 +60,7 @@ export const anyIntNotationToDecimal = (num, base) => {
         }
         console.log(resultHex);
 
-        return String(resultHex) // 🔥 retorno como string
+        return String(resultHex) //  retorno como string
     }
 }
 

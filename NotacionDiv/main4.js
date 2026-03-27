@@ -12,7 +12,7 @@ export const intDecimalToAnyNotation = (num, base) => {
     }
     console.log(decimalABinario(num)) // "100011"
 
-    return String(decimalABinario(num)) // 🔥 retorno como string
+    return String(decimalABinario(num)) //  retorno como string
 }
 
 //-----------------------Parte Hexadecimal------------------------------>>
@@ -55,5 +55,5 @@ export const intDecimalToHexadecimal = (numH) => {
 
     console.log(final)
 
-    return String(final) // 🔥 retorno como string
+    return String(final) //  retorno como string
 }

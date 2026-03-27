@@ -7,7 +7,7 @@ export const octalAHexadecimal = (octal) => {
         return "Error: número octal inválido";
     }
 
-    let [parteEntera, parteDecimal] = octal.split(".");
+    let [parteEntera, parteDecimal] = octal.split(".");// separa por el string seleccionado
 
     // 🔹 OCTAL → DECIMAL (parte entera)
     let decimalEntero = 0;

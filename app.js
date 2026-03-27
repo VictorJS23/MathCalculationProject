@@ -47,7 +47,7 @@ function calcular() {
 
     let resultado;
 
-    // 🔥 CASOS DIRECTOS (más eficientes)
+    //  CASOS DIRECTOS (más eficientes)
     if (origen === "octal" && destino === "hexadecimal") {
         resultado = octalAHexadecimal(numero);
     }
