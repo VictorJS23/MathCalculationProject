@@ -1,7 +1,7 @@
 // || YA FUNCIONA NO TOCAR ||
 
 //----------Import de funciones----------------->>
-import { IsThereANumber } from "../validation"
+import { IsThereANumber } from "../validation.js"
 //----------Import de funciones----------------->>
 
 // Solo para Notaciones enteras (sin punto decimal)
@@ -16,6 +16,8 @@ export const anyIntNotationToDecimal = (num, base) => {
             result = result * base + arr[i];
         }
         console.log(result);
+
+        return String(result) // 🔥 retorno como string
 
     } else {
         let arrHex = String(num).split('');
@@ -57,8 +59,9 @@ export const anyIntNotationToDecimal = (num, base) => {
             resultHex = resultHex * base + arrResultado[i];
         }
         console.log(resultHex);
+
+        return String(resultHex) // 🔥 retorno como string
     }
 }
 
 anyIntNotationToDecimal(1011011, 2)
-

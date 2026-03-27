@@ -1,5 +1,3 @@
-// let num = "fc5d.8"
-
 export const anyNotationHexadecimalToDecimal = (num) => {
     let arr = String(num).split('');
 
@@ -54,8 +52,11 @@ export const anyNotationHexadecimalToDecimal = (num) => {
     let indiceDecimal = arrResultado.findIndex(n => n === '.') + 1
     console.log(indiceDecimal);
 
-    for (let i = indiceDecimal; i < arrResultado.length; i++) {
-        arrDecimal.push(arrResultado[i])
+    // 🔥 FIX: evitar error si no hay parte decimal
+    if (indiceDecimal > 0) {
+        for (let i = indiceDecimal; i < arrResultado.length; i++) {
+            arrDecimal.push(arrResultado[i])
+        }
     }
 
     console.log(arrEntero)
@@ -81,5 +82,6 @@ export const anyNotationHexadecimalToDecimal = (num) => {
     let finalResult = resultEntero + resultDecimal
 
     console.log(finalResult);
-}
 
+    return String(finalResult) // 🔥 retorno como string
+}

@@ -1,8 +1,3 @@
-// Convertir un decimal a N base(solo para numeros con decimales)
-
-// let num = 25.5 //numero decimal
-// let base = 2 // base a la que se desea convertir
-
 export const anyDoubleDecimalToAnyNotation = (num, base) => {
     let partes = num.toString().split(".")
     //Convertimos el numero a String y luego separamos por punto
@@ -77,6 +72,8 @@ export const anyDoubleDecimalToAnyNotation = (num, base) => {
 
     console.log(result)
 
-    let resultadoMostrable = result.toString()
+    let resultadoMostrable = result.join("") // 🔥 cambio: quitar comas
     console.log(resultadoMostrable)
+
+    return String(resultadoMostrable) // 🔥 cambio: asegurar retorno string
 }

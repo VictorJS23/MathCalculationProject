@@ -8,7 +8,7 @@ export const anyNotationToDecimal = (num, base) => {
     let [entero, decimal] = String(num).split('.');
 
     let arrEntero = Array.from(entero, Number);
-    let arrDecimal = Array.from(decimal, Number);
+    let arrDecimal = decimal ? Array.from(decimal, Number) : [];
 
     let countEntero = arrEntero.length - 1
     let countDecimal = -1
@@ -29,4 +29,6 @@ export const anyNotationToDecimal = (num, base) => {
     let finalResult = resultEntero + resultDecimal
 
     console.log(finalResult);
+
+    return String(finalResult) // 🔥 retorno como string
 }
